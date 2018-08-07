@@ -1,6 +1,6 @@
 # Bugsnag
 
-Report exceptions in production from [crystal](https://crystal-lang.org/) http responses to Bugsnag.
+Report exceptions in production from [crystal](https://crystal-lang.org/) http servers to Bugsnag.
 
 ## Installation
 
