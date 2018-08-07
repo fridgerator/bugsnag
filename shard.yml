@@ -1,0 +1,9 @@
+name: bugsnag
+version: 0.1.0
+
+authors:
+  - Nick Franken <shnick@gmail.com>
+
+crystal: 0.25.1
+
+license: MIT
