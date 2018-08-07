@@ -14,7 +14,7 @@ module Bugsnag
     begin
       notifier = Notifier.new(@@config.name, @@config.version, @@config.url)
       event = Event.new(context, exception)
-      report = Report.new(ENV["BUGSNAG_API_KEY"], notifier, [event])
+      report = Report.new(@@config.api_key, notifier, [event])
 
       spawn {
         begin
