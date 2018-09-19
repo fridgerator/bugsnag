@@ -11,7 +11,7 @@ module Bugsnag
     property referer : String?
 
     def initialize(context : HTTP::Server::Context)
-      @client_ip = context.client_ip.to_s
+      @client_ip = context.request.headers["X-Forwarded-For"]?
       @http_method = context.request.method
       @url = context.request.path
       set_headers(context)
