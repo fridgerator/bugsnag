@@ -10,6 +10,10 @@ module Bugsnag
     yield @@config
   end
 
+  def self.config
+    @@config
+  end
+
   def self.report(context : HTTP::Server::Context, exception : ::Exception)
     begin
       notifier = Notifier.new(@@config.name, @@config.version, @@config.url)

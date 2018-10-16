@@ -13,7 +13,7 @@ module Bugsnag
     @[JSON::Field(key: "buildUUID")]
     property build_uuid : String?
     @[JSON::Field(key: "releaseStage")]
-    property release_stage : String? = "production"
+    property release_stage : String? = Bugsnag.config.release_stage
     @[JSON::Field(key: "type")]
     property app_type : String?
     @[JSON::Field(key: "dsymUUIDs")]
